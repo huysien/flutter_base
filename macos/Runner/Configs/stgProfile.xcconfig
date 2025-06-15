@@ -1,0 +1,7 @@
+#include "../../Flutter/stgProfile.xcconfig"
+#include "Warnings.xcconfig"
+
+FLUTTER_TARGET=lib/main_stg.dart
+ASSET_PREFIX=stg
+BUNDLE_NAME=[STG] Flutter Base
+BUNDLE_DISPLAY_NAME=[STG] Flutter Base

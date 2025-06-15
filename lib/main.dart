@@ -1,6 +1,10 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_base/presentation/screen/app.dart';
+import 'dart:async';
 
-void main() {
-  runApp(const App());
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+
+import 'src/presentation/screen/app/app.dart';
+
+Future<void> main() async {
+  runApp(const ProviderScope(child: App()));
 }

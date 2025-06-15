@@ -1,0 +1,14 @@
+name: screen
+description: Generate a new screen with a MVVM structure, use riverpod for state management.
+
+version: 0.1.0+1
+
+environment:
+  mason: ^0.1.0
+
+vars:
+  name:
+    type: string
+    description: Screen name
+    prompt: Enter the name of the screen
+
