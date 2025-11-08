@@ -5,7 +5,7 @@ import 'rating.dart';
 part 'wine.freezed.dart';
 
 @freezed
-class Wine with _$Wine {
+abstract class Wine with _$Wine {
   const factory Wine({
     required int id,
     required String wine,

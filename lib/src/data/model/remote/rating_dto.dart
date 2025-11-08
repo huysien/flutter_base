@@ -6,7 +6,7 @@ part 'rating_dto.freezed.dart';
 part 'rating_dto.g.dart';
 
 @freezed
-class RatingDto with _$RatingDto {
+abstract class RatingDto with _$RatingDto {
   const factory RatingDto({
     required String average,
     required String reviews,

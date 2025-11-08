@@ -7,7 +7,7 @@ part 'wine_dto.freezed.dart';
 part 'wine_dto.g.dart';
 
 @freezed
-class WineDto with _$WineDto {
+abstract class WineDto with _$WineDto {
   const factory WineDto({
     required int id,
     required String wine,

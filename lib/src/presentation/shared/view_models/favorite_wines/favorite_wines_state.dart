@@ -5,7 +5,7 @@ import '../../../../domain/entity/wine.dart';
 part 'favorite_wines_state.freezed.dart';
 
 @freezed
-class FavoriteWinesState with _$FavoriteWinesState {
+abstract class FavoriteWinesState with _$FavoriteWinesState {
   const factory FavoriteWinesState({
     required List<Wine> wines,
     required bool isLoading,

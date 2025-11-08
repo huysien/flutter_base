@@ -6,7 +6,7 @@ import '../../../domain/entity/wine_type.dart';
 part 'home_state.freezed.dart';
 
 @freezed
-class HomeState with _$HomeState {
+abstract class HomeState with _$HomeState {
   const factory HomeState({
     required List<Wine> wines,
     required WineType wineType,
