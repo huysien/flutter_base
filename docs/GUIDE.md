@@ -5,7 +5,15 @@ Follow the steps below to apply this base Flutter code to your own project:
 ## 🔧 Environment Setup
 
 - Install [FVM](https://fvm.app/documentation/getting-started/installation) to manage Flutter versions.
+```
+brew tap leoafarias/fvm
+brew install fvm
+```
 - Install [Mason CLI](https://github.com/felangel/mason/tree/master/packages/mason_cli) to use code generation bricks.
+```
+brew tap felangel/mason
+brew install mason
+```
 
 ### Add the `screen` Brick
 - Copy the `.brick/screen` folder from the base repo.

@@ -30,7 +30,7 @@ dependencies:
 
   # Modeling
   json_annotation: ^4.9.0
-  freezed_annotation: ^2.4.1
+  freezed_annotation: ^3.1.0
 
   # DI and State Management
   flutter_riverpod: ^2.5.1
@@ -50,7 +50,7 @@ dev_dependencies:
   mockito: ^5.4.5
 
   # Linter
-  flutter_lints: ^5.0.0
+  flutter_lints: ^6.0.0
 
   # Generator Runner
   build_runner: ^2.4.9
@@ -60,7 +60,7 @@ dev_dependencies:
 
   # Model generator
   json_serializable: ^6.7.1
-  freezed: ^2.4.7
+  freezed: ^3.0.6
 
   # Generator for Riverpod
   riverpod_generator: ^2.4.0

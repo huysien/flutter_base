@@ -2,6 +2,6 @@
   "arb-editor.suppressedWarnings": [
     "missing_metadata_for_key"
   ],
-  "dart.flutterSdkPath": ".fvm/versions/3.29.2",
+  "dart.flutterSdkPath": ".fvm/versions/3.35.7",
   "dart.flutterHotReloadOnSave": "all"
 }
