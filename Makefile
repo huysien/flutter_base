@@ -20,5 +20,5 @@ validate:
 
 .PHONY: screen
 screen:
-	mason make screen
+	mason make mvvm_screen
 	fvm flutter pub run build_runner build --delete-conflicting-outputs

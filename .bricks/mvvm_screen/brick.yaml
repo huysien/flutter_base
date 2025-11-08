@@ -1,4 +1,4 @@
-name: screen
+name: mvvm_screen
 description: Generate a new screen with a MVVM structure, use riverpod for state management.
 
 version: 0.1.0+1

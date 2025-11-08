@@ -15,8 +15,8 @@ brew tap felangel/mason
 brew install mason
 ```
 
-### Add the `screen` Brick
-- Copy the `.brick/screen` folder from the base repo.
+### Add the `mvvm_screen` Brick
+- Copy the `.brick/mvvm_screen` folder from the base repo.
 - Copy the `mason.yaml` file from the base.
 - Run `mason get`.
 
