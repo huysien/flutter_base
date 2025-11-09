@@ -1,5 +1,5 @@
 import '../../entity/wine.dart';
-import '../../repository/wine_repository.dart';
+import '../../repository/wine/wine_repository.dart';
 
 class GetFavoriteWinesUsecase {
   final WineRepository _wineRepository;

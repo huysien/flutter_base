@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 
 import 'api_config.dart';
 
-Dio createApiClient({String? accessToken}) {
+Dio createHttpClient({String? accessToken}) {
   var headers = <String, dynamic>{};
   if (accessToken != null) {
     headers['accessToken'] = accessToken;

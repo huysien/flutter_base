@@ -1,6 +1,6 @@
 import '../../entity/wine.dart';
 import '../../entity/wine_type.dart';
-import '../../repository/wine_repository.dart';
+import '../../repository/wine/wine_repository.dart';
 
 class SearchWineUsecase {
   final WineRepository _wineRepository;

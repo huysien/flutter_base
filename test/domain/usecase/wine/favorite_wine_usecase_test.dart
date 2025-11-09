@@ -1,6 +1,6 @@
 import 'package:flutter_base/src/domain/entity/rating.dart';
 import 'package:flutter_base/src/domain/entity/wine.dart';
-import 'package:flutter_base/src/domain/repository/wine_repository.dart';
+import 'package:flutter_base/src/domain/repository/wine/wine_repository.dart';
 import 'package:flutter_base/src/domain/usecase/wine/favorite_wine_usecase.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';

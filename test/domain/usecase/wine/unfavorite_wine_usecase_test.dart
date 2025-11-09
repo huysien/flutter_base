@@ -1,4 +1,4 @@
-import 'package:flutter_base/src/domain/repository/wine_repository.dart';
+import 'package:flutter_base/src/domain/repository/wine/wine_repository.dart';
 import 'package:flutter_base/src/domain/usecase/wine/unfavorite_wine_usecase.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/annotations.dart';

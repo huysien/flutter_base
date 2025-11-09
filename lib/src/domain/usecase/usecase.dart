@@ -1,13 +1,13 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
+import '../repository/repository.dart';
 import '../usecase/wine/favorite_wine_usecase.dart';
 import '../usecase/wine/get_favorite_wines_usecase.dart';
 import '../usecase/wine/search_wine_usecase.dart';
 import '../usecase/wine/unfavorite_wine_usecase.dart';
-import 'repositories.dart';
 
-part 'usecases.g.dart';
+part 'usecase.g.dart';
 
 @riverpod
 SearchWineUsecase searchWineUsecase(Ref ref) =>

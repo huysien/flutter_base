@@ -3,5 +3,6 @@
     "missing_metadata_for_key"
   ],
   "dart.flutterSdkPath": ".fvm/versions/3.35.7",
-  "dart.flutterHotReloadOnSave": "all"
+  "dart.flutterHotReloadOnSave": "all",
+  "editor.formatOnSave": true
 }

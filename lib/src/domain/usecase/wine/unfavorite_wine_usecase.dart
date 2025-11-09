@@ -1,4 +1,4 @@
-import '../../repository/wine_repository.dart';
+import '../../repository/wine/wine_repository.dart';
 
 class UnfavoriteWineUsecase {
   final WineRepository _wineRepository;

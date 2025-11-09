@@ -1,4 +1,4 @@
-import '../entity/wine.dart';
+import '../../entity/wine.dart';
 
 abstract class WineRepository {
   Future<List<Wine>> getWines({

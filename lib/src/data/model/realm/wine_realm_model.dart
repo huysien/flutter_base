@@ -3,46 +3,46 @@ import 'package:realm/realm.dart';
 import '../../../domain/entity/rating.dart';
 import '../../../domain/entity/wine.dart';
 
-part 'wine_local.realm.dart';
+part 'wine_realm_model.realm.dart';
 
 @RealmModel()
-class _WineLocal {
+class _WineRealmModel {
   @PrimaryKey()
   late int id;
 
   late String wine;
   late String winery;
-  _RatingLocal? rating;
+  _RatingRealmModel? rating;
   late String location;
   late String image;
 }
 
 @RealmModel(ObjectType.embeddedObject)
-class _RatingLocal {
+class _RatingRealmModel {
   late String average;
   late String reviews;
 }
 
-extension RatingLocalExt on RatingLocal {
+extension RatingRealmModelExt on RatingRealmModel {
   Rating toRating() => Rating(
         average: average,
         reviews: reviews,
       );
 
-  static RatingLocal fromRating(Rating rating) => RatingLocal(
+  static RatingRealmModel fromRating(Rating rating) => RatingRealmModel(
         rating.average,
         rating.reviews,
       );
 }
 
-extension WineLocalExt on WineLocal {
-  static WineLocal fromWine(Wine wineDto) => WineLocal(
-        wineDto.id,
-        wineDto.wine,
-        wineDto.winery,
-        wineDto.location,
-        wineDto.image,
-        rating: RatingLocalExt.fromRating(wineDto.rating),
+extension WineRealmModelExt on WineRealmModel {
+  static WineRealmModel fromWine(Wine wine) => WineRealmModel(
+        wine.id,
+        wine.wine,
+        wine.winery,
+        wine.location,
+        wine.image,
+        rating: RatingRealmModelExt.fromRating(wine.rating),
       );
 
   Wine toWine() => Wine(

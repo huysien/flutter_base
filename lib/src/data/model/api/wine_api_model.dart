@@ -1,36 +1,36 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 import '../../../domain/entity/wine.dart';
-import 'rating_dto.dart';
+import 'rating_api_model.dart';
 
-part 'wine_dto.freezed.dart';
-part 'wine_dto.g.dart';
+part 'wine_api_model.freezed.dart';
+part 'wine_api_model.g.dart';
 
 @freezed
-abstract class WineDto with _$WineDto {
-  const factory WineDto({
+abstract class WineApiModel with _$WineApiModel {
+  const factory WineApiModel({
     required int id,
     required String wine,
     required String winery,
-    required RatingDto rating,
+    required RatingApiModel rating,
     required String location,
     required String image,
-  }) = _WineDto;
+  }) = _WineApiModel;
 
-  factory WineDto.fromJson(Map<String, dynamic> json) =>
-      _$WineDtoFromJson(json);
+  factory WineApiModel.fromJson(Map<String, dynamic> json) =>
+      _$WineApiModelFromJson(json);
 
-  factory WineDto.fromWine(Wine wine) => WineDto(
+  factory WineApiModel.fromWine(Wine wine) => WineApiModel(
         id: wine.id,
         wine: wine.wine,
         winery: wine.winery,
-        rating: RatingDto.fromRating(wine.rating),
+        rating: RatingApiModel.fromRating(wine.rating),
         location: wine.location,
         image: wine.image,
       );
 }
 
-extension WineDtoExt on WineDto {
+extension WineApiModelExt on WineApiModel {
   Wine toWine() => Wine(
         id: id,
         wine: wine,
