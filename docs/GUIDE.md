@@ -37,6 +37,12 @@ brew install mason
 
 ## 🎨 FlutterGen Setup
 
+- Setup [FlutterGen](https://github.com/FlutterGen/flutter_gen)
+
+```
+brew install FlutterGen/tap/fluttergen
+```
+
 - Copy the FlutterGen configuration section from the base `pubspec.yaml`.
 - Add the `/assets/colors/colors.xml` file for defining custom colors.
 - Generated files should be located in the `res/gen` directory.
