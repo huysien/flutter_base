@@ -5,17 +5,21 @@ Follow the steps below to apply this base Flutter code to your own project:
 ## 🔧 Environment Setup
 
 - Install [FVM](https://fvm.app/documentation/getting-started/installation) to manage Flutter versions.
+
 ```
 brew tap leoafarias/fvm
 brew install fvm
 ```
+
 - Install [Mason CLI](https://github.com/felangel/mason/tree/master/packages/mason_cli) to use code generation bricks.
+
 ```
 brew tap felangel/mason
 brew install mason
 ```
 
 ### Add the `mvvm_screen` Brick
+
 - Copy the `.brick/mvvm_screen` folder from the base repo.
 - Copy the `mason.yaml` file from the base.
 - Run `mason get`.
@@ -28,7 +32,7 @@ brew install mason
 ## 🌐 Localization Setup
 
 - Copy the `l10n.yaml` file from the base.
-- Place `.arb` files and generated localization code in the `res/l10n` directory.
+- Place `.arb` files and generated localization code in the `lib/res/l10n` directory.
 - Follow the official [Flutter localization guide](https://docs.flutter.dev/ui/accessibility-and-internationalization/internationalization).
 
 ## 🎨 FlutterGen Setup
